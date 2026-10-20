@@ -45,13 +45,13 @@
 
 <form on:submit|preventDefault={onSubmitHandler} class="space-y-4">
   <div>
-    <label for="register-name-input" class="block text-xs font-bold text-slate-600 uppercase tracking-wider mb-1.5">
+    <label for="register-name-input" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
       Nama Lengkap
     </label>
     <div class="relative">
       <User
         size={18}
-        class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"
+        class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-600"
       />
       <input
         type="text"
@@ -59,20 +59,20 @@
         data-testid="register-name-input"
         bind:value={name}
         placeholder="Nama Lengkap"
-        class="w-full pl-10 pr-3.5 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all"
+        class="w-full pl-10 pr-3.5 py-2.5 rounded-xl border border-slate-200 text-sm placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all"
         required
       />
     </div>
   </div>
 
   <div>
-    <label for="register-email-input" class="block text-xs font-bold text-slate-600 uppercase tracking-wider mb-1.5">
+    <label for="register-email-input" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
       Alamat Email
     </label>
     <div class="relative">
       <Mail
         size={18}
-        class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"
+        class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-600"
       />
       <input
         type="email"
@@ -80,20 +80,20 @@
         data-testid="register-email-input"
         bind:value={email}
         placeholder="nama@email.com"
-        class="w-full pl-10 pr-3.5 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all"
+        class="w-full pl-10 pr-3.5 py-2.5 rounded-xl border border-slate-200 text-sm placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all"
         required
       />
     </div>
   </div>
 
   <div>
-    <label for="register-password-input" class="block text-xs font-bold text-slate-600 uppercase tracking-wider mb-1.5">
+    <label for="register-password-input" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
       Kata Sandi
     </label>
     <div class="relative">
       <Lock
         size={18}
-        class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"
+        class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-600"
       />
       <input
         type="password"
@@ -101,20 +101,20 @@
         data-testid="register-password-input"
         bind:value={password}
         placeholder="••••••••"
-        class="w-full pl-10 pr-3.5 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all"
+        class="w-full pl-10 pr-3.5 py-2.5 rounded-xl border border-slate-200 text-sm placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all"
         required
       />
     </div>
   </div>
 
   <div>
-    <label for="register-password-confirm-input" class="block text-xs font-bold text-slate-600 uppercase tracking-wider mb-1.5">
+    <label for="register-password-confirm-input" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
       Konfirmasi Kata Sandi
     </label>
     <div class="relative">
       <Lock
         size={18}
-        class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"
+        class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-600"
       />
       <input
         type="password"
@@ -122,7 +122,7 @@
         data-testid="register-password-confirm-input"
         bind:value={passwordConfirmation}
         placeholder="••••••••"
-        class="w-full pl-10 pr-3.5 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all"
+        class="w-full pl-10 pr-3.5 py-2.5 rounded-xl border border-slate-200 text-sm placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all"
         required
       />
     </div>

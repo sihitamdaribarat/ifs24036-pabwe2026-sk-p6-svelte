@@ -43,7 +43,7 @@
       <div class="relative flex-1 max-w-md">
         <Search
           size={18}
-          class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-500"
+          class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-600"
         />
         <input
           type="text"
