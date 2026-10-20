@@ -116,7 +116,7 @@
           <span class="text-sm font-semibold text-slate-800 leading-tight">
             {profile?.name || "Pengguna"}
           </span>
-          <span class="text-xs text-slate-600 leading-tight">
+          <span class="text-xs text-slate-700 leading-tight">
             {profile?.email || ""}
           </span>
         </div>
