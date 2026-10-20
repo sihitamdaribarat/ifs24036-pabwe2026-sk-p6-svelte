@@ -28,7 +28,7 @@
 <div class="space-y-6 animate-in fade-in duration-300">
   <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
     <div>
-      <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+      <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-500 tracking-tight">
         Semua Pengguna
       </h1>
       <p class="text-sm text-slate-500 mt-1">
@@ -90,7 +90,7 @@
               {/if}
 
               <div class="min-w-0 flex-1">
-                <h3 class="font-bold text-slate-900 truncate">{u.name}</h3>
+                <h3 class="font-bold text-slate-500 truncate">{u.name}</h3>
                 <p class="text-xs text-slate-500 flex items-center gap-1 mt-0.5 truncate">
                   <Mail size={14} class="shrink-0 text-slate-500" />
                   <span class="truncate">{u.email}</span>

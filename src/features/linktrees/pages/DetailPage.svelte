@@ -153,7 +153,7 @@
       <div class="p-6 sm:p-8 space-y-6">
         <div class="space-y-3">
           <div class="flex items-center gap-3">
-            <span class="font-mono text-xs font-bold text-slate-700">
+            <span class="font-mono text-xs font-bold text-slate-500">
               {"#" + linkTree.id}
             </span>
             {#if linkTree.type === "public"}
@@ -167,18 +167,18 @@
                 Unlisted
               </span>
             {:else}
-              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-slate-100 text-slate-700 border border-slate-200">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-slate-100 text-slate-500 border border-slate-200">
                 <Lock size={14} />
                 Pribadi
               </span>
             {/if}
           </div>
 
-          <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+          <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-500 tracking-tight">
             {linkTree.title}
           </h1>
 
-          <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-slate-700">
+          <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-slate-500">
             {#if linkTree.author}
               <div class="flex items-center gap-1.5">
                 {#if linkTree.author.photo}
@@ -188,28 +188,28 @@
                     class="w-5 h-5 rounded-full object-cover"
                   />
                 {/if}
-                <span>Penulis: <strong class="text-slate-900">{linkTree.author.name}</strong></span>
+                <span>Penulis: <strong class="text-slate-500">{linkTree.author.name}</strong></span>
               </div>
             {/if}
             <div class="flex items-center gap-1.5">
               <Calendar size={14} class="shrink-0" />
-              <span>Dibuat: <strong class="text-slate-900">{formatDate(linkTree.created_at)}</strong></span>
+              <span>Dibuat: <strong class="text-slate-500">{formatDate(linkTree.created_at)}</strong></span>
             </div>
             <div class="flex items-center gap-1.5">
               <Calendar size={14} class="shrink-0" />
-              <span>Diperbarui: <strong class="text-slate-900">{formatDate(linkTree.updated_at)}</strong></span>
+              <span>Diperbarui: <strong class="text-slate-500">{formatDate(linkTree.updated_at)}</strong></span>
             </div>
           </div>
         </div>
 
         <div
           data-testid="linktree-detail-description"
-          class="prose max-w-none text-slate-700 bg-slate-50/60 p-6 rounded-2xl border border-slate-100 leading-relaxed"
+          class="prose max-w-none text-slate-500 bg-slate-50/60 p-6 rounded-2xl border border-slate-100 leading-relaxed"
         >
           {#if linkTree.description}
             <p>{linkTree.description}</p>
           {:else}
-            <p class="italic text-slate-600">Tidak ada deskripsi rinci untuk link tree ini.</p>
+            <p class="italic text-slate-500">Tidak ada deskripsi rinci untuk link tree ini.</p>
           {/if}
         </div>
       </div>
@@ -223,8 +223,8 @@
             <LinkIcon size={18} />
           </div>
           <div>
-            <h2 class="text-lg font-bold text-slate-900">Daftar Item Tautan</h2>
-            <p class="text-xs text-slate-600">Kelola daftar tautan yang ditampilkan pada Link Tree ini</p>
+            <h2 class="text-lg font-bold text-slate-500">Daftar Item Tautan</h2>
+            <p class="text-xs text-slate-500">Kelola daftar tautan yang ditampilkan pada Link Tree ini</p>
           </div>
         </div>
         <button
@@ -241,8 +241,8 @@
       {#if !linkTree.items || linkTree.items.length === 0}
         <div class="text-center py-10 border-2 border-dashed border-slate-200 rounded-2xl p-6">
           <LinkIcon size={36} class="mx-auto text-slate-400 mb-2" />
-          <p class="text-sm font-semibold text-slate-700">Belum ada item tautan</p>
-          <p class="text-xs text-slate-700 mt-1">Klik tombol di atas untuk menambahkan tautan baru ke halaman ini.</p>
+          <p class="text-sm font-semibold text-slate-500">Belum ada item tautan</p>
+          <p class="text-xs text-slate-500 mt-1">Klik tombol di atas untuk menambahkan tautan baru ke halaman ini.</p>
         </div>
       {:else}
         <div class="space-y-3">

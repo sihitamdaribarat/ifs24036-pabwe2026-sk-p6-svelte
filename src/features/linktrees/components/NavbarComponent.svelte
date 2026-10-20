@@ -60,7 +60,7 @@
           dispatch("toggle-sidebar");
           if (onToggleSidebar) onToggleSidebar();
         }}
-        class="md:hidden p-2 rounded-lg text-slate-500 hover:bg-slate-100 hover:text-slate-900 transition-colors"
+        class="md:hidden p-2 rounded-lg text-slate-500 hover:bg-slate-100 hover:text-slate-500 transition-colors"
         aria-label="Toggle Navigation"
       >
         {#if isSidebarOpen}

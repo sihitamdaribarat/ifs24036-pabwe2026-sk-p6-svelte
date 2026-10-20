@@ -100,7 +100,7 @@
 {:else}
   <div class="space-y-8 max-w-4xl mx-auto animate-in fade-in duration-300">
     <div>
-      <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+      <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-500 tracking-tight">
         Profil Akun
       </h1>
       <p class="text-sm text-slate-500 mt-1">

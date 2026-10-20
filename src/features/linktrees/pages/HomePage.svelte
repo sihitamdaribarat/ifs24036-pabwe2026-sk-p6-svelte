@@ -94,7 +94,7 @@
     <!-- Header Banner -->
     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
       <div>
-        <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+        <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-500 tracking-tight">
           Daftar Link Tree
         </h1>
         <p class="text-sm text-slate-500 mt-1">
@@ -192,7 +192,7 @@
               type="button"
               data-testid="filter-all-btn"
               on:click={() => (filter = "")}
-              class="px-3 py-1.5 rounded-lg transition-all {filter === '' ? 'bg-white text-slate-900 shadow-xs' : 'hover:text-slate-900'}"
+              class="px-3 py-1.5 rounded-lg transition-all {filter === '' ? 'bg-white text-slate-500 shadow-xs' : 'hover:text-slate-500'}"
             >
               Semua
             </button>
@@ -200,7 +200,7 @@
               type="button"
               data-testid="filter-mine-btn"
               on:click={() => (filter = "1")}
-              class="px-3 py-1.5 rounded-lg transition-all {filter === '1' ? 'bg-white text-indigo-700 shadow-xs' : 'hover:text-slate-900'}"
+              class="px-3 py-1.5 rounded-lg transition-all {filter === '1' ? 'bg-white text-indigo-700 shadow-xs' : 'hover:text-slate-500'}"
             >
               Milik Saya
             </button>
