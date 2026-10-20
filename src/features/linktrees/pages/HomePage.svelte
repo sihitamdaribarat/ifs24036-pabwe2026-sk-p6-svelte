@@ -209,7 +209,8 @@
       </div>
 
       <!-- Responsive Table -->
-      <div class="overflow-x-auto">
+      <!-- svelte-ignore a11y_no_noninteractive_tabindex -->
+      <div class="overflow-x-auto" tabindex="0" role="region" aria-label="Tabel daftar link tree">
         <table class="w-full text-left text-sm text-slate-500">
           <thead class="bg-slate-50/80 text-xs uppercase tracking-wider font-semibold text-slate-500 border-b border-slate-100">
             <tr>
