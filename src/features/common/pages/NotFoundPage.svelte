@@ -10,9 +10,9 @@
     </div>
 
     <div class="space-y-2">
-      <h1 class="text-4xl font-black text-slate-500 tracking-tight">404</h1>
-      <h2 class="text-xl font-bold text-slate-500">Halaman Tidak Ditemukan</h2>
-      <p class="text-sm text-slate-500 leading-relaxed">
+      <h1 class="text-4xl font-black text-slate-600 tracking-tight">404</h1>
+      <h2 class="text-xl font-bold text-slate-600">Halaman Tidak Ditemukan</h2>
+      <p class="text-sm text-slate-600 leading-relaxed">
         Maaf, halaman yang Anda cari tidak dapat ditemukan atau telah dipindahkan.
       </p>
     </div>
@@ -22,7 +22,7 @@
         type="button"
         data-testid="back-button"
         on:click={() => window.history.back()}
-        class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl border border-slate-200 text-sm font-semibold text-slate-500 hover:bg-slate-50 transition-colors"
+        class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl border border-slate-200 text-sm font-semibold text-slate-600 hover:bg-slate-50 transition-colors"
       >
         <ArrowLeft size={16} />
         Kembali

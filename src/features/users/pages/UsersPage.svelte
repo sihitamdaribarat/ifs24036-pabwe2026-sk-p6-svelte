@@ -28,10 +28,10 @@
 <div class="space-y-6 animate-in fade-in duration-300">
   <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
     <div>
-      <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-500 tracking-tight">
+      <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-600 tracking-tight">
         Semua Pengguna
       </h1>
-      <p class="text-sm text-slate-500 mt-1">
+      <p class="text-sm text-slate-600 mt-1">
         Daftar seluruh akun pengguna yang terdaftar di dalam sistem.
       </p>
     </div>
@@ -43,7 +43,7 @@
       <div class="relative flex-1 max-w-md">
         <Search
           size={18}
-          class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-500"
+          class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-600"
         />
         <input
           type="text"
@@ -61,14 +61,14 @@
     <!-- User Grid -->
     <div class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {#if loadingUsers && filteredUsers.length === 0}
-        <div class="col-span-full py-16 text-center text-slate-500">
+        <div class="col-span-full py-16 text-center text-slate-600">
           <LoaderCircle size={36} class="mx-auto text-indigo-600 animate-spin mb-2" />
-          <p class="font-medium text-slate-500">Memuat daftar pengguna...</p>
+          <p class="font-medium text-slate-600">Memuat daftar pengguna...</p>
         </div>
       {:else if filteredUsers.length === 0}
-        <div class="col-span-full py-12 text-center text-slate-500">
-          <Users size={40} class="mx-auto text-slate-500 mb-2" />
-          <p class="font-medium text-slate-500">Tidak ada data pengguna ditemukan.</p>
+        <div class="col-span-full py-12 text-center text-slate-600">
+          <Users size={40} class="mx-auto text-slate-600 mb-2" />
+          <p class="font-medium text-slate-600">Tidak ada data pengguna ditemukan.</p>
         </div>
       {:else}
         {#each filteredUsers as u (u.id)}
@@ -90,17 +90,17 @@
               {/if}
 
               <div class="min-w-0 flex-1">
-                <h3 class="font-bold text-slate-500 truncate">{u.name}</h3>
-                <p class="text-xs text-slate-500 flex items-center gap-1 mt-0.5 truncate">
-                  <Mail size={14} class="shrink-0 text-slate-500" />
+                <h3 class="font-bold text-slate-600 truncate">{u.name}</h3>
+                <p class="text-xs text-slate-600 flex items-center gap-1 mt-0.5 truncate">
+                  <Mail size={14} class="shrink-0 text-slate-600" />
                   <span class="truncate">{u.email}</span>
                 </p>
               </div>
             </div>
 
-            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
-              <span class="font-mono font-semibold text-slate-500">{"ID: #" + u.id}</span>
-              <span class="flex items-center gap-1 text-slate-500">
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-600">
+              <span class="font-mono font-semibold text-slate-600">{"ID: #" + u.id}</span>
+              <span class="flex items-center gap-1 text-slate-600">
                 <Calendar size={13} />
                 {formatDate(u.created_at)}
               </span>

@@ -81,13 +81,13 @@
           <div class="w-8 h-8 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center">
             <ImagePlus size={18} strokeWidth={2.5} />
           </div>
-          <h3 class="text-base font-bold text-slate-500">Ubah Cover Link Tree</h3>
+          <h3 class="text-base font-bold text-slate-600">Ubah Cover Link Tree</h3>
         </div>
         <button
           type="button"
           data-testid="close-cover-modal-btn"
           on:click={handleClose}
-          class="p-1.5 rounded-lg text-slate-500 hover:text-slate-500 hover:bg-slate-100 transition-colors"
+          class="p-1.5 rounded-lg text-slate-600 hover:text-slate-600 hover:bg-slate-100 transition-colors"
         >
           <X size={18} />
         </button>
@@ -95,7 +95,7 @@
 
       <form on:submit|preventDefault={handleSave} class="p-6 space-y-4">
         <div>
-          <span class="block text-sm font-semibold text-slate-500 mb-2">
+          <span class="block text-sm font-semibold text-slate-600 mb-2">
             Pilih Gambar Cover
           </span>
           <label class="flex flex-col items-center justify-center w-full h-44 border-2 border-dashed border-slate-300 hover:border-indigo-500 rounded-2xl cursor-pointer bg-slate-50/50 hover:bg-indigo-50/20 transition-all overflow-hidden relative">
@@ -116,10 +116,10 @@
                 <div class="w-10 h-10 mb-2 rounded-full bg-indigo-50 text-indigo-600 flex items-center justify-center">
                   <Upload size={20} />
                 </div>
-                <p class="text-sm font-semibold text-slate-500">
+                <p class="text-sm font-semibold text-slate-600">
                   Klik untuk memilih foto
                 </p>
-                <p class="text-xs text-slate-500 mt-1">PNG, JPG, JPEG (Max. 1MB)</p>
+                <p class="text-xs text-slate-600 mt-1">PNG, JPG, JPEG (Max. 1MB)</p>
               </div>
             {/if}
             <input
@@ -138,7 +138,7 @@
             data-testid="cancel-cover-modal-btn"
             on:click={handleClose}
             disabled={loading}
-            class="px-4 py-2.5 text-sm font-medium text-slate-500 hover:text-slate-500 hover:bg-slate-100 rounded-xl transition-colors"
+            class="px-4 py-2.5 text-sm font-medium text-slate-600 hover:text-slate-600 hover:bg-slate-100 rounded-xl transition-colors"
           >
             Batal
           </button>
