@@ -106,7 +106,7 @@
           type="button"
           data-testid="close-edit-modal-btn"
           on:click={handleClose}
-          class="p-2 rounded-xl text-slate-400 hover:text-slate-600 hover:bg-slate-200/60 transition-colors"
+          class="p-2 rounded-xl text-slate-600 hover:text-slate-800 hover:bg-slate-200/60 transition-colors"
         >
           <X size={20} />
         </button>
@@ -122,7 +122,7 @@
           {:else}
             <div>
               <label for="edit-linktree-title-input" class="block text-sm font-semibold text-slate-700 mb-1.5">
-                Judul Link Tree <span class="text-red-500">*</span>
+                Judul Link Tree <span class="text-red-700 font-bold">*</span>
               </label>
               <input
                 id="edit-linktree-title-input"
@@ -136,7 +136,7 @@
 
             <div>
               <label for="edit-linktree-type-select" class="block text-sm font-semibold text-slate-700 mb-1.5">
-                Tipe Visibilitas <span class="text-red-500">*</span>
+                Tipe Visibilitas <span class="text-red-700 font-bold">*</span>
               </label>
               <select
                 id="edit-linktree-type-select"
@@ -152,14 +152,14 @@
 
             <div>
               <label for="edit-linktree-description-input" class="block text-sm font-semibold text-slate-700 mb-1.5">
-                Deskripsi <span class="text-red-500">*</span>
+                Deskripsi <span class="text-red-700 font-bold">*</span>
               </label>
               <textarea
                 id="edit-linktree-description-input"
                 data-testid="edit-linktree-description-input"
                 bind:value={description}
                 rows="4"
-                class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all text-sm shadow-xs resize-none"
+                class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all text-sm shadow-xs resize-none"
                 required
               ></textarea>
             </div>

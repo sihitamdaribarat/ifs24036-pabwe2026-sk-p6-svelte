@@ -99,7 +99,7 @@
                     size={20}
                     class={active
                       ? "text-white"
-                      : "text-slate-400 group-hover:text-slate-600"}
+                      : "text-slate-600 group-hover:text-slate-800"}
                   />
                   <span>{item.label}</span>
                 </div>

@@ -120,7 +120,7 @@
           type="button"
           data-testid="edit-detail-linktree-btn"
           on:click={() => (showEditModal = true)}
-          class="inline-flex items-center gap-2 px-3.5 py-2 text-xs font-semibold rounded-xl text-amber-700 bg-amber-50 hover:bg-amber-100 border border-amber-200/60 transition-colors"
+          class="inline-flex items-center gap-2 px-3.5 py-2 text-xs font-semibold rounded-xl text-amber-800 bg-amber-50 hover:bg-amber-100 border border-amber-200/60 transition-colors"
         >
           <PenLine size={16} />
           Ubah Data
@@ -129,7 +129,7 @@
           type="button"
           data-testid="delete-detail-linktree-btn"
           on:click={handleDelete}
-          class="inline-flex items-center gap-2 px-3.5 py-2 text-xs font-semibold rounded-xl text-red-700 bg-red-50 hover:bg-red-100 border border-red-200/60 transition-colors"
+          class="inline-flex items-center gap-2 px-3.5 py-2 text-xs font-semibold rounded-xl text-red-800 bg-red-50 hover:bg-red-100 border border-red-200/60 transition-colors"
         >
           <Trash2 size={16} />
           Hapus
@@ -274,7 +274,7 @@
                   type="button"
                   data-testid={`edit-item-${item.id}`}
                   on:click={() => handleEditItem(item)}
-                  class="p-2 text-slate-500 hover:text-amber-600 hover:bg-amber-50 rounded-xl transition-colors"
+                  class="p-2 text-slate-600 hover:text-amber-700 hover:bg-amber-50 rounded-xl transition-colors"
                   title="Ubah Tautan"
                 >
                   <Pencil size={16} />
@@ -283,7 +283,7 @@
                   type="button"
                   data-testid={`delete-item-${item.id}`}
                   on:click={() => handleDeleteItem(item.id)}
-                  class="p-2 text-slate-500 hover:text-red-600 hover:bg-red-50 rounded-xl transition-colors"
+                  class="p-2 text-slate-600 hover:text-red-700 hover:bg-red-50 rounded-xl transition-colors"
                   title="Hapus Tautan"
                 >
                   <Trash2 size={16} />

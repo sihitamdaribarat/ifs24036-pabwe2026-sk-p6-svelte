@@ -97,7 +97,7 @@
         <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
           Daftar Link Tree
         </h1>
-        <p class="text-sm text-slate-500 mt-1">
+        <p class="text-sm text-slate-600 mt-1">
           Kelola dan bagikan seluruh kumpulan tautan penting Anda dalam satu tempat.
         </p>
       </div>
@@ -106,7 +106,7 @@
           type="button"
           data-testid="delete-all-btn"
           on:click={handleDeleteAll}
-          class="inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-xl font-semibold text-sm text-red-700 bg-red-50 hover:bg-red-100 border border-red-200 transition-all"
+          class="inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-xl font-bold text-sm text-red-800 bg-red-50 hover:bg-red-100 border border-red-200 transition-all"
           title="Hapus Semua Link Tree Milik Saya"
         >
           <Trash2 size={16} />
@@ -143,11 +143,11 @@
           <p class="text-xs font-semibold uppercase tracking-wider text-slate-700">
             Link Tree Publik
           </p>
-          <h3 class="text-3xl font-black text-emerald-600 mt-1">
+          <h3 class="text-3xl font-black text-emerald-700 mt-1">
             {publicCount}
           </h3>
         </div>
-        <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center">
+        <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-700 flex items-center justify-center">
           <Globe size={26} strokeWidth={2} />
         </div>
       </div>
@@ -157,29 +157,29 @@
           <p class="text-xs font-semibold uppercase tracking-wider text-slate-700">
             Milik Saya
           </p>
-          <h3 class="text-3xl font-black text-amber-600 mt-1">{myCount}</h3>
+          <h3 class="text-3xl font-black text-amber-700 mt-1">{myCount}</h3>
         </div>
-        <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center">
+        <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-700 flex items-center justify-center">
           <Lock size={26} strokeWidth={2} />
         </div>
       </div>
     </div>
 
     <!-- Table & Controls Section -->
-    <div class="bg-white rounded-2xl border border-slate-200/80 shadow-xs overflow-hidden">
+    <div class="bg-white rounded-3xl border border-slate-200/80 shadow-xs overflow-hidden">
       <!-- Filter bar -->
       <div class="p-4 sm:p-5 border-b border-slate-100 flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div class="relative flex-1 max-w-md">
           <Search
             size={18}
-            class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"
+            class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-500"
           />
           <input
             type="text"
             data-testid="search-linktree-input"
             bind:value={searchQuery}
             placeholder="Cari judul atau rincian link tree..."
-            class="w-full pl-10 pr-4 py-2 text-sm rounded-xl border border-slate-200 bg-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all"
+            class="w-full pl-10 pr-4 py-2 text-sm rounded-xl border border-slate-200 bg-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all"
           />
         </div>
 
@@ -233,7 +233,7 @@
             {:else if filteredLinkTrees.length === 0}
               <tr>
                 <td colspan="7" class="px-6 py-12 text-center text-slate-600">
-                  <Link size={40} class="mx-auto text-slate-400 mb-2" />
+                  <Link size={40} class="mx-auto text-slate-600 mb-2" />
                   <p class="font-medium text-slate-700">Belum ada data link tree yang cocok.</p>
                 </td>
               </tr>
@@ -255,7 +255,7 @@
                           class="w-12 h-12 rounded-xl object-cover border border-slate-200 shrink-0"
                         />
                       {:else}
-                        <div class="w-12 h-12 rounded-xl bg-slate-100 text-slate-400 flex items-center justify-center shrink-0 border border-slate-200">
+                        <div class="w-12 h-12 rounded-xl bg-slate-100 text-slate-600 flex items-center justify-center shrink-0 border border-slate-200">
                           <Link size={20} />
                         </div>
                       {/if}
