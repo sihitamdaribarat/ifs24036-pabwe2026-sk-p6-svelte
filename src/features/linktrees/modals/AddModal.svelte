@@ -75,8 +75,8 @@
             <Plus size={18} strokeWidth={2.5} />
           </div>
           <div>
-            <h3 class="text-base font-bold text-slate-800">Tambah Link Tree Baru</h3>
-            <p class="text-xs text-slate-600">
+            <h3 class="text-base font-bold text-slate-500">Tambah Link Tree Baru</h3>
+            <p class="text-xs text-slate-500">
               Buat halaman kumpulan tautan baru
             </p>
           </div>
@@ -85,7 +85,7 @@
           type="button"
           data-testid="close-add-modal-btn"
           on:click={handleClose}
-          class="p-2 rounded-xl text-slate-600 hover:text-slate-800 hover:bg-slate-200/60 transition-colors"
+          class="p-2 rounded-xl text-slate-500 hover:text-slate-500 hover:bg-slate-200/60 transition-colors"
         >
           <X size={20} />
         </button>
@@ -100,7 +100,7 @@
           <div>
             <label
               for="add-linktree-title-input"
-              class="block text-sm font-semibold text-slate-700 mb-1.5"
+              class="block text-sm font-semibold text-slate-500 mb-1.5"
             >
               Judul Link Tree <span class="text-red-700 font-bold">*</span>
             </label>
@@ -110,7 +110,7 @@
               data-testid="add-linktree-title-input"
               bind:value={title}
               placeholder="Contoh: Media Sosial & Portofolio"
-              class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all text-sm shadow-xs"
+              class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-500 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all text-sm shadow-xs"
               required
             />
           </div>
@@ -118,7 +118,7 @@
           <div>
             <label
               for="add-linktree-type-select"
-              class="block text-sm font-semibold text-slate-700 mb-1.5"
+              class="block text-sm font-semibold text-slate-500 mb-1.5"
             >
               Tipe Visibilitas <span class="text-red-700 font-bold">*</span>
             </label>
@@ -126,7 +126,7 @@
               id="add-linktree-type-select"
               data-testid="add-linktree-type-select"
               bind:value={type}
-              class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all text-sm shadow-xs"
+              class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all text-sm shadow-xs"
             >
               <option value="public">Publik (Bisa dilihat siapa saja)</option>
               <option value="unlisted">Unlisted (Hanya lewat tautan langsung)</option>
@@ -137,7 +137,7 @@
           <div>
             <label
               for="add-linktree-description-input"
-              class="block text-sm font-semibold text-slate-700 mb-1.5"
+              class="block text-sm font-semibold text-slate-500 mb-1.5"
             >
               Deskripsi <span class="text-red-700 font-bold">*</span>
             </label>
@@ -147,7 +147,7 @@
               bind:value={description}
               rows="4"
               placeholder="Tuliskan keterangan mengenai kumpulan tautan ini..."
-              class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all text-sm shadow-xs resize-none"
+              class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-500 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all text-sm shadow-xs resize-none"
               required
             ></textarea>
           </div>
@@ -162,7 +162,7 @@
             data-testid="cancel-add-modal-btn"
             on:click={handleClose}
             disabled={loading}
-            class="px-5 py-2.5 text-sm font-medium text-slate-600 hover:text-slate-800 hover:bg-slate-200/60 rounded-xl transition-colors"
+            class="px-5 py-2.5 text-sm font-medium text-slate-500 hover:text-slate-500 hover:bg-slate-200/60 rounded-xl transition-colors"
           >
             Batal
           </button>

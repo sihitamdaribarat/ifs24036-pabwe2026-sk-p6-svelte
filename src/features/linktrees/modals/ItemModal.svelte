@@ -94,7 +94,7 @@
               <Link size={18} strokeWidth={2.5} />
             {/if}
           </div>
-          <h3 class="text-base font-bold text-slate-800">
+          <h3 class="text-base font-bold text-slate-500">
             {item ? "Ubah Item Tautan" : "Tambah Item Tautan"}
           </h3>
         </div>
@@ -102,7 +102,7 @@
           type="button"
           data-testid="close-item-modal-btn"
           on:click={handleClose}
-          class="p-1.5 rounded-lg text-slate-600 hover:text-slate-800 hover:bg-slate-100 transition-colors"
+          class="p-1.5 rounded-lg text-slate-500 hover:text-slate-500 hover:bg-slate-100 transition-colors"
         >
           <X size={18} />
         </button>
@@ -110,7 +110,7 @@
 
       <form on:submit|preventDefault={handleSave} class="p-6 space-y-4">
         <div>
-          <label for="item-title-input" class="block text-sm font-semibold text-slate-700 mb-1.5">
+          <label for="item-title-input" class="block text-sm font-semibold text-slate-500 mb-1.5">
             Judul / Label Tautan <span class="text-red-700 font-bold">*</span>
           </label>
           <input
@@ -119,13 +119,13 @@
             data-testid="item-title-input"
             bind:value={title}
             placeholder="Contoh: GitHub Profil, Portfolio, dll"
-            class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all text-sm shadow-xs"
+            class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-500 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all text-sm shadow-xs"
             required
           />
         </div>
 
         <div>
-          <label for="item-url-input" class="block text-sm font-semibold text-slate-700 mb-1.5">
+          <label for="item-url-input" class="block text-sm font-semibold text-slate-500 mb-1.5">
             Alamat URL <span class="text-red-700 font-bold">*</span>
           </label>
           <input
@@ -134,7 +134,7 @@
             data-testid="item-url-input"
             bind:value={url}
             placeholder="https://example.com"
-            class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all text-sm shadow-xs"
+            class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-500 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all text-sm shadow-xs"
             required
           />
         </div>
@@ -145,7 +145,7 @@
             data-testid="cancel-item-modal-btn"
             on:click={handleClose}
             disabled={loading}
-            class="px-4 py-2.5 text-sm font-medium text-slate-600 hover:text-slate-800 hover:bg-slate-100 rounded-xl transition-colors"
+            class="px-4 py-2.5 text-sm font-medium text-slate-500 hover:text-slate-500 hover:bg-slate-100 rounded-xl transition-colors"
           >
             Batal
           </button>

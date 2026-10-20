@@ -60,7 +60,7 @@
           dispatch("toggle-sidebar");
           if (onToggleSidebar) onToggleSidebar();
         }}
-        class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100 hover:text-slate-900 transition-colors"
+        class="md:hidden p-2 rounded-lg text-slate-500 hover:bg-slate-100 hover:text-slate-900 transition-colors"
         aria-label="Toggle Navigation"
       >
         {#if isSidebarOpen}
@@ -113,16 +113,16 @@
         {/if}
 
         <div class="hidden sm:flex flex-col text-left">
-          <span class="text-sm font-semibold text-slate-800 leading-tight">
+          <span class="text-sm font-semibold text-slate-500 leading-tight">
             {profile?.name || "Pengguna"}
           </span>
-          <span class="text-xs text-slate-700 leading-tight">
+          <span class="text-xs text-slate-500 leading-tight">
             {profile?.email || ""}
           </span>
         </div>
         <ChevronDown
           size={16}
-          class="text-slate-600 transition-transform duration-200 {dropdownOpen
+          class="text-slate-500 transition-transform duration-200 {dropdownOpen
             ? 'rotate-180'
             : ''}"
         />
@@ -134,8 +134,8 @@
           class="absolute right-0 mt-2 w-56 rounded-2xl bg-white p-2 shadow-xl ring-1 ring-slate-900/5 divide-y divide-slate-100 z-50 animate-in fade-in zoom-in-95 duration-150"
         >
           <div class="px-3 py-2 sm:hidden">
-            <p class="text-sm font-semibold text-slate-800">{profile?.name}</p>
-            <p class="text-xs text-slate-600 truncate">{profile?.email}</p>
+            <p class="text-sm font-semibold text-slate-500">{profile?.name}</p>
+            <p class="text-xs text-slate-500 truncate">{profile?.email}</p>
           </div>
 
           <div class="py-1">
@@ -143,9 +143,9 @@
               type="button"
               data-testid="dropdown-profile-link"
               on:click={handleProfileClick}
-              class="w-full flex items-center gap-2.5 px-3 py-2 text-sm text-slate-700 rounded-xl hover:bg-slate-100 transition-colors text-left"
+              class="w-full flex items-center gap-2.5 px-3 py-2 text-sm text-slate-500 rounded-xl hover:bg-slate-100 transition-colors text-left"
             >
-              <User size={18} class="text-slate-600" />
+              <User size={18} class="text-slate-500" />
               Profil Saya
             </button>
           </div>

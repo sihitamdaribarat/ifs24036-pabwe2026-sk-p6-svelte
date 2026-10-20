@@ -97,7 +97,7 @@
         <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
           Daftar Link Tree
         </h1>
-        <p class="text-sm text-slate-600 mt-1">
+        <p class="text-sm text-slate-500 mt-1">
           Kelola dan bagikan seluruh kumpulan tautan penting Anda dalam satu tempat.
         </p>
       </div>
@@ -128,10 +128,10 @@
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
       <div class="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-xs flex items-center justify-between">
         <div>
-          <p class="text-xs font-semibold uppercase tracking-wider text-slate-700">
+          <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">
             Total Link Tree
           </p>
-          <h3 class="text-3xl font-black text-slate-800 mt-1">{totalCount}</h3>
+          <h3 class="text-3xl font-black text-slate-500 mt-1">{totalCount}</h3>
         </div>
         <div class="w-12 h-12 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center">
           <Link size={26} strokeWidth={2} />
@@ -140,7 +140,7 @@
 
       <div class="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-xs flex items-center justify-between">
         <div>
-          <p class="text-xs font-semibold uppercase tracking-wider text-slate-700">
+          <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">
             Link Tree Publik
           </p>
           <h3 class="text-3xl font-black text-emerald-700 mt-1">
@@ -154,7 +154,7 @@
 
       <div class="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-xs flex items-center justify-between">
         <div>
-          <p class="text-xs font-semibold uppercase tracking-wider text-slate-700">
+          <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">
             Milik Saya
           </p>
           <h3 class="text-3xl font-black text-amber-700 mt-1">{myCount}</h3>
@@ -172,7 +172,7 @@
         <div class="relative flex-1 max-w-md">
           <Search
             size={18}
-            class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-600"
+            class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-500"
           />
           <input
             type="text"
@@ -184,10 +184,10 @@
         </div>
 
         <div class="flex items-center gap-2.5">
-          <span class="text-xs font-semibold text-slate-700 uppercase tracking-wide flex items-center gap-1.5">
+          <span class="text-xs font-semibold text-slate-500 uppercase tracking-wide flex items-center gap-1.5">
             <Funnel size={16} /> Filter:
           </span>
-          <div class="inline-flex rounded-xl bg-slate-100 p-1 text-xs font-semibold text-slate-700">
+          <div class="inline-flex rounded-xl bg-slate-100 p-1 text-xs font-semibold text-slate-500">
             <button
               type="button"
               data-testid="filter-all-btn"
@@ -210,8 +210,8 @@
 
       <!-- Responsive Table -->
       <div class="overflow-x-auto">
-        <table class="w-full text-left text-sm text-slate-700">
-          <thead class="bg-slate-50/80 text-xs uppercase tracking-wider font-semibold text-slate-700 border-b border-slate-100">
+        <table class="w-full text-left text-sm text-slate-500">
+          <thead class="bg-slate-50/80 text-xs uppercase tracking-wider font-semibold text-slate-500 border-b border-slate-100">
             <tr>
               <th class="px-5 py-3.5 text-center w-16">ID</th>
               <th class="px-5 py-3.5">Judul & Cover</th>
@@ -225,16 +225,16 @@
           <tbody class="divide-y divide-slate-100">
             {#if loadingLinkTrees && filteredLinkTrees.length === 0}
               <tr>
-                <td colspan="7" class="px-6 py-12 text-center text-slate-600">
+                <td colspan="7" class="px-6 py-12 text-center text-slate-500">
                   <LoaderCircle size={36} class="mx-auto text-indigo-600 animate-spin mb-2" />
-                  <p class="font-medium text-slate-700">Memuat daftar link tree...</p>
+                  <p class="font-medium text-slate-500">Memuat daftar link tree...</p>
                 </td>
               </tr>
             {:else if filteredLinkTrees.length === 0}
               <tr>
-                <td colspan="7" class="px-6 py-12 text-center text-slate-600">
-                  <Link size={40} class="mx-auto text-slate-600 mb-2" />
-                  <p class="font-medium text-slate-700">Belum ada data link tree yang cocok.</p>
+                <td colspan="7" class="px-6 py-12 text-center text-slate-500">
+                  <Link size={40} class="mx-auto text-slate-500 mb-2" />
+                  <p class="font-medium text-slate-500">Belum ada data link tree yang cocok.</p>
                 </td>
               </tr>
             {:else}
@@ -243,7 +243,7 @@
                   data-testid={`linktree-row-${item.id}`}
                   class="hover:bg-slate-50/70 transition-colors group"
                 >
-                  <td class="px-5 py-4 text-center font-mono text-xs font-bold text-slate-800">
+                  <td class="px-5 py-4 text-center font-mono text-xs font-bold text-slate-500">
                     {"#" + item.id}
                   </td>
                   <td class="px-5 py-4">
@@ -255,23 +255,23 @@
                           class="w-12 h-12 rounded-xl object-cover border border-slate-200 shrink-0"
                         />
                       {:else}
-                        <div class="w-12 h-12 rounded-xl bg-slate-100 text-slate-600 flex items-center justify-center shrink-0 border border-slate-200">
+                        <div class="w-12 h-12 rounded-xl bg-slate-100 text-slate-500 flex items-center justify-center shrink-0 border border-slate-200">
                           <Link size={20} />
                         </div>
                       {/if}
                       <div>
-                        <p class="font-semibold text-slate-800 leading-snug">
+                        <p class="font-semibold text-slate-500 leading-snug">
                           {item.title}
                         </p>
                         {#if item.description}
-                          <p class="text-xs text-slate-600 line-clamp-1 mt-0.5">
+                          <p class="text-xs text-slate-500 line-clamp-1 mt-0.5">
                             {item.description}
                           </p>
                         {/if}
                       </div>
                     </div>
                   </td>
-                  <td class="px-5 py-4 text-xs text-slate-600">
+                  <td class="px-5 py-4 text-xs text-slate-500">
                     <div class="flex items-center gap-2">
                       {#if item.author?.photo}
                         <img
@@ -295,7 +295,7 @@
                         Unlisted
                       </span>
                     {:else}
-                      <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-800 border border-slate-200">
+                      <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-500 border border-slate-200">
                         <Lock size={12} />
                         Pribadi
                       </span>
@@ -306,7 +306,7 @@
                       {item.total_links ?? 0}
                     </span>
                   </td>
-                  <td class="px-5 py-4 hidden md:table-cell text-xs text-slate-600">
+                  <td class="px-5 py-4 hidden md:table-cell text-xs text-slate-500">
                     {formatDate(item.created_at)}
                   </td>
                   <td class="px-5 py-4 text-right">
@@ -315,7 +315,7 @@
                         type="button"
                         data-testid={`view-linktree-${item.id}`}
                         on:click={() => navigate(`/link-trees/${item.id}`)}
-                        class="p-1.5 text-slate-600 hover:text-indigo-600 hover:bg-indigo-50 rounded-lg transition-colors"
+                        class="p-1.5 text-slate-500 hover:text-indigo-600 hover:bg-indigo-50 rounded-lg transition-colors"
                         title="Lihat Detail"
                       >
                         <Eye size={18} />
@@ -324,7 +324,7 @@
                         type="button"
                         data-testid={`edit-linktree-${item.id}`}
                         on:click={() => handleEditLinkTree(item.id)}
-                        class="p-1.5 text-slate-600 hover:text-amber-600 hover:bg-amber-50 rounded-lg transition-colors"
+                        class="p-1.5 text-slate-500 hover:text-amber-600 hover:bg-amber-50 rounded-lg transition-colors"
                         title="Ubah Link Tree"
                       >
                         <Pencil size={18} />
@@ -333,7 +333,7 @@
                         type="button"
                         data-testid={`delete-linktree-${item.id}`}
                         on:click={() => handleDeleteLinkTree(item.id)}
-                        class="p-1.5 text-slate-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                        class="p-1.5 text-slate-500 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
                         title="Hapus Link Tree"
                       >
                         <Trash2 size={18} />

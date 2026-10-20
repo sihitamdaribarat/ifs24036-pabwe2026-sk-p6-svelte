@@ -45,13 +45,13 @@
 
 <form on:submit|preventDefault={onSubmitHandler} class="space-y-4">
   <div>
-    <label for="register-name-input" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+    <label for="register-name-input" class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1.5">
       Nama Lengkap
     </label>
     <div class="relative">
       <User
         size={18}
-        class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-600"
+        class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-500"
       />
       <input
         type="text"
@@ -66,13 +66,13 @@
   </div>
 
   <div>
-    <label for="register-email-input" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+    <label for="register-email-input" class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1.5">
       Alamat Email
     </label>
     <div class="relative">
       <Mail
         size={18}
-        class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-600"
+        class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-500"
       />
       <input
         type="email"
@@ -87,13 +87,13 @@
   </div>
 
   <div>
-    <label for="register-password-input" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+    <label for="register-password-input" class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1.5">
       Kata Sandi
     </label>
     <div class="relative">
       <Lock
         size={18}
-        class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-600"
+        class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-500"
       />
       <input
         type="password"
@@ -108,13 +108,13 @@
   </div>
 
   <div>
-    <label for="register-password-confirm-input" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+    <label for="register-password-confirm-input" class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1.5">
       Konfirmasi Kata Sandi
     </label>
     <div class="relative">
       <Lock
         size={18}
-        class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-600"
+        class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-500"
       />
       <input
         type="password"

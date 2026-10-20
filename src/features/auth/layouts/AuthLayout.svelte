@@ -30,7 +30,7 @@
     <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">
       Delcom Link Tree
     </h2>
-    <p class="mt-1 text-sm text-slate-600">
+    <p class="mt-1 text-sm text-slate-500">
       Aplikasi Kumpulan Tautan & Autentikasi Modern (Svelte)
     </p>
   </div>
@@ -42,14 +42,14 @@
         <button
           type="button"
           on:click={() => navigate("/auth/login")}
-          class="flex-1 py-2 text-center text-sm font-semibold rounded-xl transition-all {isLoginActive ? 'bg-white text-indigo-700 shadow-xs' : 'text-slate-600 hover:text-slate-900'}"
+          class="flex-1 py-2 text-center text-sm font-semibold rounded-xl transition-all {isLoginActive ? 'bg-white text-indigo-700 shadow-xs' : 'text-slate-500 hover:text-slate-900'}"
         >
           Masuk Akun
         </button>
         <button
           type="button"
           on:click={() => navigate("/auth/register")}
-          class="flex-1 py-2 text-center text-sm font-semibold rounded-xl transition-all {!isLoginActive ? 'bg-white text-indigo-700 shadow-xs' : 'text-slate-600 hover:text-slate-900'}"
+          class="flex-1 py-2 text-center text-sm font-semibold rounded-xl transition-all {!isLoginActive ? 'bg-white text-indigo-700 shadow-xs' : 'text-slate-500 hover:text-slate-900'}"
         >
           Daftar Baru
         </button>

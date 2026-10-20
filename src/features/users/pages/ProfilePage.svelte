@@ -95,7 +95,7 @@
 {#if !profile}
   <div class="flex flex-col items-center justify-center py-24">
     <LoaderCircle size={36} class="text-indigo-600 animate-spin mb-2" />
-    <p class="text-sm font-medium text-slate-600">Memuat data profil...</p>
+    <p class="text-sm font-medium text-slate-500">Memuat data profil...</p>
   </div>
 {:else}
   <div class="space-y-8 max-w-4xl mx-auto animate-in fade-in duration-300">
@@ -103,7 +103,7 @@
       <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
         Profil Akun
       </h1>
-      <p class="text-sm text-slate-600 mt-1">
+      <p class="text-sm text-slate-500 mt-1">
         Kelola informasi identitas, foto profil, dan keamanan akun Anda.
       </p>
     </div>
@@ -144,8 +144,8 @@
       </div>
 
       <div class="text-center sm:text-left space-y-1">
-        <h2 class="text-xl font-bold text-slate-800">{profile.name}</h2>
-        <p class="text-sm text-slate-600">{profile.email}</p>
+        <h2 class="text-xl font-bold text-slate-500">{profile.name}</h2>
+        <p class="text-sm text-slate-500">{profile.email}</p>
         <div class="pt-2">
           <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700 border border-indigo-200/60">
             <Check size={14} /> Terverifikasi
@@ -161,12 +161,12 @@
           <div class="w-8 h-8 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center">
             <User size={18} />
           </div>
-          <h3 class="font-bold text-slate-800">Ubah Biodata</h3>
+          <h3 class="font-bold text-slate-500">Ubah Biodata</h3>
         </div>
 
         <form on:submit|preventDefault={handleUpdateProfile} class="space-y-4">
           <div>
-            <label for="profile-name-input" class="block text-xs font-bold text-slate-600 uppercase tracking-wider mb-1.5">
+            <label for="profile-name-input" class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1.5">
               Nama Lengkap
             </label>
             <input
@@ -180,7 +180,7 @@
           </div>
 
           <div>
-            <label for="profile-email-input" class="block text-xs font-bold text-slate-600 uppercase tracking-wider mb-1.5">
+            <label for="profile-email-input" class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1.5">
               Alamat Email
             </label>
             <input
@@ -217,12 +217,12 @@
           <div class="w-8 h-8 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center">
             <ShieldCheck size={18} />
           </div>
-          <h3 class="font-bold text-slate-800">Keamanan & Password</h3>
+          <h3 class="font-bold text-slate-500">Keamanan & Password</h3>
         </div>
 
         <form on:submit|preventDefault={handleUpdatePassword} class="space-y-4">
           <div>
-            <label for="current-password-input" class="block text-xs font-bold text-slate-600 uppercase tracking-wider mb-1.5">
+            <label for="current-password-input" class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1.5">
               Kata Sandi Saat Ini
             </label>
             <input
@@ -237,7 +237,7 @@
           </div>
 
           <div>
-            <label for="new-password-input" class="block text-xs font-bold text-slate-600 uppercase tracking-wider mb-1.5">
+            <label for="new-password-input" class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1.5">
               Kata Sandi Baru
             </label>
             <input
@@ -252,7 +252,7 @@
           </div>
 
           <div>
-            <label for="confirm-password-input" class="block text-xs font-bold text-slate-600 uppercase tracking-wider mb-1.5">
+            <label for="confirm-password-input" class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1.5">
               Ulangi Kata Sandi Baru
             </label>
             <input
