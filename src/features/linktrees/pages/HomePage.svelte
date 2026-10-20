@@ -243,7 +243,7 @@
                   data-testid={`linktree-row-${item.id}`}
                   class="hover:bg-slate-50/70 transition-colors group"
                 >
-                  <td class="px-5 py-4 text-center font-mono text-xs font-bold text-slate-600">
+                  <td class="px-5 py-4 text-center font-mono text-xs font-bold text-slate-800">
                     {"#" + item.id}
                   </td>
                   <td class="px-5 py-4">

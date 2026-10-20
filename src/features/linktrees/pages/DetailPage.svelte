@@ -153,7 +153,7 @@
       <div class="p-6 sm:p-8 space-y-6">
         <div class="space-y-3">
           <div class="flex items-center gap-3">
-            <span class="font-mono text-xs font-bold text-slate-700">
+            <span class="font-mono text-xs font-bold text-slate-800">
               {"#" + linkTree.id}
             </span>
             {#if linkTree.type === "public"}

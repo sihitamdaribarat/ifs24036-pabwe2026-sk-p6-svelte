@@ -99,8 +99,8 @@
             </div>
 
             <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-800">
-              <span class="font-mono font-semibold">{"ID: #" + u.id}</span>
-              <span class="flex items-center gap-1">
+              <span class="font-mono font-semibold text-slate-800">{"ID: #" + u.id}</span>
+              <span class="flex items-center gap-1 text-slate-800">
                 <Calendar size={13} />
                 {formatDate(u.created_at)}
               </span>
