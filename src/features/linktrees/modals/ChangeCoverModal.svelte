@@ -119,7 +119,7 @@
                 <p class="text-sm font-semibold text-slate-700">
                   Klik untuk memilih foto
                 </p>
-                <p class="text-xs text-slate-500 mt-1">PNG, JPG, JPEG (Max. 1MB)</p>
+                <p class="text-xs text-slate-600 mt-1">PNG, JPG, JPEG (Max. 1MB)</p>
               </div>
             {/if}
             <input

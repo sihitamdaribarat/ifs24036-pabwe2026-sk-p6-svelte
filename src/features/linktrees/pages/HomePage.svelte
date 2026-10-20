@@ -106,7 +106,7 @@
           type="button"
           data-testid="delete-all-btn"
           on:click={handleDeleteAll}
-          class="inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-xl font-semibold text-sm text-red-600 bg-red-50 hover:bg-red-100 border border-red-200 transition-all"
+          class="inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-xl font-semibold text-sm text-red-700 bg-red-50 hover:bg-red-100 border border-red-200 transition-all"
           title="Hapus Semua Link Tree Milik Saya"
         >
           <Trash2 size={16} />
@@ -128,7 +128,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
       <div class="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-xs flex items-center justify-between">
         <div>
-          <p class="text-xs font-semibold uppercase tracking-wider text-slate-400">
+          <p class="text-xs font-semibold uppercase tracking-wider text-slate-700">
             Total Link Tree
           </p>
           <h3 class="text-3xl font-black text-slate-800 mt-1">{totalCount}</h3>
@@ -140,7 +140,7 @@
 
       <div class="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-xs flex items-center justify-between">
         <div>
-          <p class="text-xs font-semibold uppercase tracking-wider text-slate-400">
+          <p class="text-xs font-semibold uppercase tracking-wider text-slate-700">
             Link Tree Publik
           </p>
           <h3 class="text-3xl font-black text-emerald-600 mt-1">
@@ -154,7 +154,7 @@
 
       <div class="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-xs flex items-center justify-between">
         <div>
-          <p class="text-xs font-semibold uppercase tracking-wider text-slate-400">
+          <p class="text-xs font-semibold uppercase tracking-wider text-slate-700">
             Milik Saya
           </p>
           <h3 class="text-3xl font-black text-amber-600 mt-1">{myCount}</h3>
@@ -184,10 +184,10 @@
         </div>
 
         <div class="flex items-center gap-2.5">
-          <span class="text-xs font-semibold text-slate-500 uppercase tracking-wide flex items-center gap-1.5">
+          <span class="text-xs font-semibold text-slate-700 uppercase tracking-wide flex items-center gap-1.5">
             <Funnel size={16} /> Filter:
           </span>
-          <div class="inline-flex rounded-xl bg-slate-100 p-1 text-xs font-semibold text-slate-600">
+          <div class="inline-flex rounded-xl bg-slate-100 p-1 text-xs font-semibold text-slate-700">
             <button
               type="button"
               data-testid="filter-all-btn"
@@ -210,8 +210,8 @@
 
       <!-- Responsive Table -->
       <div class="overflow-x-auto">
-        <table class="w-full text-left text-sm text-slate-600">
-          <thead class="bg-slate-50/80 text-xs uppercase tracking-wider font-semibold text-slate-500 border-b border-slate-100">
+        <table class="w-full text-left text-sm text-slate-700">
+          <thead class="bg-slate-50/80 text-xs uppercase tracking-wider font-semibold text-slate-700 border-b border-slate-100">
             <tr>
               <th class="px-5 py-3.5 text-center w-16">ID</th>
               <th class="px-5 py-3.5">Judul & Cover</th>
@@ -225,16 +225,16 @@
           <tbody class="divide-y divide-slate-100">
             {#if loadingLinkTrees && filteredLinkTrees.length === 0}
               <tr>
-                <td colspan="7" class="px-6 py-12 text-center text-slate-400">
+                <td colspan="7" class="px-6 py-12 text-center text-slate-600">
                   <LoaderCircle size={36} class="mx-auto text-indigo-600 animate-spin mb-2" />
-                  <p class="font-medium text-slate-600">Memuat daftar link tree...</p>
+                  <p class="font-medium text-slate-700">Memuat daftar link tree...</p>
                 </td>
               </tr>
             {:else if filteredLinkTrees.length === 0}
               <tr>
-                <td colspan="7" class="px-6 py-12 text-center text-slate-400">
-                  <Link size={40} class="mx-auto text-slate-300 mb-2" />
-                  <p class="font-medium">Belum ada data link tree yang cocok.</p>
+                <td colspan="7" class="px-6 py-12 text-center text-slate-600">
+                  <Link size={40} class="mx-auto text-slate-400 mb-2" />
+                  <p class="font-medium text-slate-700">Belum ada data link tree yang cocok.</p>
                 </td>
               </tr>
             {:else}
@@ -243,7 +243,7 @@
                   data-testid={`linktree-row-${item.id}`}
                   class="hover:bg-slate-50/70 transition-colors group"
                 >
-                  <td class="px-5 py-4 text-center font-mono text-xs font-bold text-slate-400">
+                  <td class="px-5 py-4 text-center font-mono text-xs font-bold text-slate-600">
                     {"#" + item.id}
                   </td>
                   <td class="px-5 py-4">
@@ -264,7 +264,7 @@
                           {item.title}
                         </p>
                         {#if item.description}
-                          <p class="text-xs text-slate-400 line-clamp-1 mt-0.5">
+                          <p class="text-xs text-slate-600 line-clamp-1 mt-0.5">
                             {item.description}
                           </p>
                         {/if}
@@ -306,7 +306,7 @@
                       {item.total_links ?? 0}
                     </span>
                   </td>
-                  <td class="px-5 py-4 hidden md:table-cell text-xs text-slate-500">
+                  <td class="px-5 py-4 hidden md:table-cell text-xs text-slate-600">
                     {formatDate(item.created_at)}
                   </td>
                   <td class="px-5 py-4 text-right">

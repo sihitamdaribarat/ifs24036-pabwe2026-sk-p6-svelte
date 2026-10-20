@@ -99,7 +99,7 @@
           </div>
           <div>
             <h3 class="text-base font-bold text-slate-800">Ubah Data Link Tree</h3>
-            <p class="text-xs text-slate-500">Perbarui judul, tipe visibilitas, dan detail deskripsi</p>
+            <p class="text-xs text-slate-600">Perbarui judul, tipe visibilitas, dan detail deskripsi</p>
           </div>
         </div>
         <button

@@ -30,7 +30,7 @@
     <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">
       Delcom Link Tree
     </h2>
-    <p class="mt-1 text-sm text-slate-500">
+    <p class="mt-1 text-sm text-slate-600">
       Aplikasi Kumpulan Tautan & Autentikasi Modern (Svelte)
     </p>
   </div>

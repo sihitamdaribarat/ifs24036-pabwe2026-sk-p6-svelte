@@ -76,7 +76,7 @@
           </div>
           <div>
             <h3 class="text-base font-bold text-slate-800">Tambah Link Tree Baru</h3>
-            <p class="text-xs text-slate-500">
+            <p class="text-xs text-slate-600">
               Buat halaman kumpulan tautan baru
             </p>
           </div>
